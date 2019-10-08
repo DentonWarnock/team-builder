@@ -2,8 +2,9 @@ import React from 'react';
 
 function MemberCard(props) {
 
-  return (
+  return (    
     <div className="member-card"> 
+    <h1>Current Members Info</h1>
       {props.membersList.map(member => {
         return (
           <div className="card" key={member.id}>

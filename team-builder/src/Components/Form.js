@@ -15,6 +15,7 @@ function Form(props) {
 
   return (
     <div className="form-body">
+      <h1>Add New Member</h1>
       <form onSubmit={handleSubmit}>
         <label htmlFor="name">Member Name</label>
         <input
@@ -24,6 +25,31 @@ function Form(props) {
           type="text"
           onChange={handleChange}
         />
+        <label htmlFor="email">Member Email</label>
+        <input
+          id="email"
+          value={member.email}
+          name="email"
+          type="email"
+          onChange={handleChange}
+        />
+        <label htmlFor="email">Member Email</label>
+        <input
+          id="email"
+          value={member.email}
+          name="email"
+          type="email"
+          onChange={handleChange}
+        />
+        <label htmlFor="role">Member Role</label>
+        <select id="role">
+          <option />
+          <option>Q and A</option>
+          <option>Front End</option>
+          <option>Back End</option>
+          <option>Full Stack</option>
+          <option>Team Lead</option>
+        </select>
       </form>
     </div>
   );
