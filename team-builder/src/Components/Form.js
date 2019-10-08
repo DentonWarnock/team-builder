@@ -34,7 +34,12 @@ function Form(props) {
           onChange={handleChange}
         />
         <label htmlFor="role">Member Role</label>
-        <select id="role">
+        <select 
+          id="role"
+          value={member.role}
+          name="role"
+          onChange={handleChange}
+        >
           <option />
           <option>Q and A</option>
           <option>Front End</option>

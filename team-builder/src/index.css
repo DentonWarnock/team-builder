@@ -4,7 +4,7 @@ body {
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale;  
 }
 
 code {
@@ -33,7 +33,7 @@ form input {
 
 form button {
   height: 2rem;
-  width: 25%;
+  width: 7.5rem;
   margin: 2rem auto;
 }
 
@@ -41,6 +41,8 @@ form button {
   height: 2.5rem;
 }
 
-.card {
-  margin: 1.5rem;
+.card:nth-child(n+3) {
+  border: 2px solid black;
+  width: 25%;
+  margin: 1rem auto;
 }
