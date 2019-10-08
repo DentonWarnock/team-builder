@@ -33,14 +33,6 @@ function Form(props) {
           type="email"
           onChange={handleChange}
         />
-        <label htmlFor="email">Member Email</label>
-        <input
-          id="email"
-          value={member.email}
-          name="email"
-          type="email"
-          onChange={handleChange}
-        />
         <label htmlFor="role">Member Role</label>
         <select id="role">
           <option />
@@ -50,6 +42,7 @@ function Form(props) {
           <option>Full Stack</option>
           <option>Team Lead</option>
         </select>
+        <button type="submit">Add Member</button>
       </form>
     </div>
   );

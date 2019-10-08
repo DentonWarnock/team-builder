@@ -31,6 +31,12 @@ form input {
   height: 2rem;
 }
 
+form button {
+  height: 2rem;
+  width: 25%;
+  margin: 2rem auto;
+}
+
 #role {
   height: 2.5rem;
 }
