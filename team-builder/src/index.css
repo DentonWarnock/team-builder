@@ -46,3 +46,20 @@ form button {
   width: 25%;
   margin: 1rem auto;
 }
+
+.card .edit-Btn {
+  margin: 0.5rem;
+  width: 5rem;
+  height: 2.5rem;
+  background: dodgerblue;
+  color: white;
+  font-weight: bold;
+  border: none;
+}
+
+.card .edit-Btn:hover {
+  color: dodgerblue;
+  background: white;
+  cursor: pointer;
+  border: 1px solid black;
+}

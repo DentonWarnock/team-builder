@@ -12,6 +12,7 @@ function MemberCard(props) {
             <h3>{member.name}</h3>
             <h3>{member.email}</h3>
             <h3>{member.role}</h3>
+            {member.name !== "" ? <button className="edit-Btn" onClick={props.editMemberFn(member)}>Edit</button> : null}
           </div>
         );
       })}         

@@ -12,6 +12,7 @@ function App() {
       role: ""
     }
   ]);
+  const [memberToEdit, setMemberToEdit] = useState([{}]);
 
   const addMember = member => {
     const newMember = {
@@ -23,10 +24,14 @@ function App() {
     setMembers([...members, newMember]);
   }
 
+  const editMember = member => {
+    setMemberToEdit(member)
+  }
+
   return (
     <div className="App">
-      <Form addMemberFn={addMember} />
-      <MemberCard membersList={members} />
+      <Form addMemberFn={addMember} editMemberFn={editMember} memberToEdit={memberToEdit} />      
+      <MemberCard membersList={members} editMemberFn={editMember} />
     </div>
   );
 }

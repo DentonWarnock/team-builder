@@ -1,7 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 function Form(props) {
   const [member, setMember] = useState({name: "", email: "", role: ""});
+
+  useEffect(() => {
+    setMember(props.memberToEdit);
+    console.log("Use Effect Props", props.memberToEdit)
+  }, [props.memberToEdit]);
 
   const handleChange = event => {
     setMember({ ...member, [event.target.name]: event.target.value });
@@ -12,6 +17,8 @@ function Form(props) {
     props.addMemberFn(member)
     setMember({name: "", email: "", role: ""});
   }
+
+  console.log("Member in Form.js", member)
 
   return (
     <div className="form-body">
